@@ -1,0 +1,14 @@
+{
+  "name": "token-inspect",
+  "private": true,
+  "version": "2.2.1",
+  "description": "Standalone SlimVG Token Inspect Chrome extension (any localhost project).",
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync.mjs",
+    "build": "npm run sync"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

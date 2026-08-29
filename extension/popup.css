@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  width: 320px;
+  font: 13px/1.4 system-ui, -apple-system, sans-serif;
+  color: #171717;
+  background: #fafafa;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  color: #525252;
+  font-size: 12px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.stat {
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.stat .count {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.stat .count.status {
+  font-size: 16px;
+  color: #737373;
+}
+
+.stat .count.status.on {
+  color: #2563eb;
+}
+
+.stat .label {
+  font-size: 11px;
+  color: #737373;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.actions {
+  display: grid;
+  gap: 8px;
+}
+
+button {
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font: inherit;
+  cursor: pointer;
+  background: #fff;
+}
+
+button.primary {
+  background: #171717;
+  color: #fff;
+  border-color: #171717;
+}
+
+button.primary.active {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+button:hover {
+  filter: brightness(0.97);
+}
+
+.hint {
+  margin: 12px 0 0;
+  font-size: 11px;
+  color: #737373;
+}

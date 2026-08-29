@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "SlimVG Token Inspect",
+  "version": "2.2.1",
+  "description": "Inspect tokens, preview edits, paste SVG path data, and push changes via the local writer.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": [
+    "http://localhost/*",
+    "http://127.0.0.1/*",
+    "http://127.0.0.1:7319/*"
+  ],
+  "action": {
+    "default_title": "Token Inspect",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost/*",
+        "http://127.0.0.1/*"
+      ],
+      "css": ["panel.css"],
+      "js": ["content.bundle.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
