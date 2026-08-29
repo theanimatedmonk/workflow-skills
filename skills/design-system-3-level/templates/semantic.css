@@ -1,0 +1,74 @@
+/**
+ * Layer 2 — Semantic tokens
+ * Purpose-driven aliases. Theme overrides live under [data-theme='dark'].
+ */
+:root,
+[data-theme='light'] {
+  --color-bg-canvas: var(--primitive-brand-50);
+  --color-bg-elevated: var(--primitive-white);
+  --color-bg-subtle: var(--primitive-brand-100);
+  --color-bg-hover: rgb(0 0 0 / 0.04);
+  --color-bg-inverse: var(--primitive-brand-900);
+
+  --color-text-primary: var(--primitive-brand-900);
+  --color-text-secondary: var(--primitive-brand-600);
+  --color-text-muted: var(--primitive-brand-500);
+  --color-text-inverse: var(--primitive-white);
+  --color-text-on-primary: var(--primitive-white);
+
+  --color-primary: var(--primitive-brand-800);
+  --color-primary-hover: var(--primitive-brand-700);
+  --color-border-default: var(--primitive-brand-200);
+  --color-border-subtle: var(--primitive-brand-100);
+  --color-border-focus: var(--primitive-brand-500);
+
+  --space-page-x: var(--primitive-space-4);
+  --space-page-y: var(--primitive-space-8);
+  --space-stack-xs: var(--primitive-space-1);
+  --space-stack-sm: var(--primitive-space-2);
+  --space-stack-md: var(--primitive-space-4);
+  --space-stack-lg: var(--primitive-space-6);
+  --space-stack-xl: var(--primitive-space-8);
+  --space-inline-sm: var(--primitive-space-2);
+  --space-inline-md: var(--primitive-space-4);
+
+  --font-family-sans: var(--primitive-font-sans);
+  --font-size-caption: var(--primitive-font-size-xs);
+  --font-size-body-sm: var(--primitive-font-size-sm);
+  --font-size-body: var(--primitive-font-size-base);
+  --font-size-heading-sm: var(--primitive-font-size-xl);
+  --font-weight-body: var(--primitive-font-weight-normal);
+  --font-weight-label: var(--primitive-font-weight-medium);
+  --font-weight-heading: var(--primitive-font-weight-bold);
+  --line-height-body: var(--primitive-line-height-normal);
+
+  --radius-control: var(--primitive-radius-md);
+  --radius-card: var(--primitive-radius-xl);
+
+  --duration-interaction: var(--primitive-duration-normal);
+  --ease-interaction: var(--primitive-ease-default);
+
+  --icon-size-sm: 1rem;
+  --icon-size-md: 1.25rem;
+  --icon-size-lg: 1.5rem;
+}
+
+[data-theme='dark'] {
+  --color-bg-canvas: var(--primitive-brand-900);
+  --color-bg-elevated: var(--primitive-brand-800);
+  --color-bg-subtle: var(--primitive-brand-700);
+  --color-bg-hover: rgb(255 255 255 / 0.06);
+  --color-bg-inverse: var(--primitive-brand-50);
+
+  --color-text-primary: var(--primitive-brand-50);
+  --color-text-secondary: var(--primitive-brand-300);
+  --color-text-muted: var(--primitive-brand-400);
+  --color-text-inverse: var(--primitive-brand-900);
+  --color-text-on-primary: var(--primitive-brand-50);
+
+  --color-primary: var(--primitive-brand-200);
+  --color-primary-hover: var(--primitive-brand-100);
+  --color-border-default: var(--primitive-brand-700);
+  --color-border-subtle: var(--primitive-brand-800);
+  --color-border-focus: var(--primitive-brand-400);
+}

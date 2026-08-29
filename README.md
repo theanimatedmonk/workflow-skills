@@ -1,17 +1,29 @@
 # Token Inspect — setup guide (any repo)
 
-Standalone Chrome extension for inspecting and editing design tokens on localhost apps. Use it with the Cursor skills:
+Standalone Chrome extension for inspecting and editing design tokens on localhost apps. Cursor skills in this repo work in **any** project once they are installed under `~/.cursor/skills/`.
 
-| Skill | Location | Purpose |
-|-------|----------|---------|
-| **design-system** | `~/.cursor/skills/design-system/` | Scaffold 2/3-level tokens, CSS modules, Icon |
-| **token-inspect** | `~/.cursor/skills/token-inspect/` | Wire config + Push writer |
+| Skill | Purpose |
+|-------|---------|
+| **design-system-3-level** | Primitive → semantic → component tokens |
+| **design-system-2-level** | Primitive → semantic tokens only |
+| **css-modules** | Colocated CSS per component (`Button.css` / `.module.css`) |
+| **token-inspect** | Wire config + Push writer (`~/.cursor/skills/token-inspect/`) |
+
+Install (symlink into Cursor so every repo can invoke them):
+
+```bash
+chmod +x skills/install.sh
+./skills/install.sh
+```
+
+In any repo chat: *“Set up a 3-level design system”*, *“Set up a 2-level design system”*, or *“Add CSS modules for this component”*.
 
 ```
 ~/Documents/Code files/token-inspect/
   extension/     ← Load unpacked in Chrome (this folder)
   core/          ← Shared token helpers
   scripts/       ← npm run sync (rebuild bundle)
+  skills/        ← Cursor skills (install with skills/install.sh)
   README.md      ← this file
 ```
 
@@ -187,11 +199,13 @@ curl -s http://127.0.0.1:7319/health
 
 ## Cursor shortcuts
 
-In any repo chat:
+In any repo chat (after `skills/install.sh`):
 
-- *“Set up a 3-level design system”* → **design-system** skill  
-- *“Wire Token Inspect for this repo”* → **token-inspect** skill  
-- *“Add an icon from this SVG path”* → **design-system** (Icon templates)
+- *“Set up a 3-level design system”* → **design-system-3-level**
+- *“Set up a 2-level design system”* → **design-system-2-level**
+- *“Add CSS modules for this component”* → **css-modules**
+- *“Wire Token Inspect for this repo”* → **token-inspect**
+- *“Add an icon from this SVG path”* → the matching design-system skill (Icon templates)
 
 ---
 

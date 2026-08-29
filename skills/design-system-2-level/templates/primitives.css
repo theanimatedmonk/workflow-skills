@@ -1,0 +1,57 @@
+/**
+ * Layer 1 — Primitive tokens
+ * Raw values. Do not reference from components directly (3-level).
+ * In 2-level systems, components still prefer semantic aliases.
+ */
+:root {
+  --primitive-brand-50: #fafafa;
+  --primitive-brand-100: #f5f5f5;
+  --primitive-brand-200: #e5e5e5;
+  --primitive-brand-300: #d4d4d4;
+  --primitive-brand-400: #a3a3a3;
+  --primitive-brand-500: #737373;
+  --primitive-brand-600: #525252;
+  --primitive-brand-700: #404040;
+  --primitive-brand-800: #262626;
+  --primitive-brand-900: #171717;
+
+  --primitive-white: #ffffff;
+  --primitive-black: #000000;
+
+  --primitive-space-1: 0.25rem;
+  --primitive-space-2: 0.5rem;
+  --primitive-space-3: 0.75rem;
+  --primitive-space-4: 1rem;
+  --primitive-space-6: 1.5rem;
+  --primitive-space-8: 2rem;
+  --primitive-space-12: 3rem;
+  --primitive-space-16: 4rem;
+
+  --primitive-radius-sm: 0.25rem;
+  --primitive-radius-md: 0.5rem;
+  --primitive-radius-lg: 0.75rem;
+  --primitive-radius-xl: 1rem;
+  --primitive-radius-full: 9999px;
+
+  --primitive-font-sans: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --primitive-font-size-xs: 0.75rem;
+  --primitive-font-size-sm: 0.875rem;
+  --primitive-font-size-base: 1rem;
+  --primitive-font-size-lg: 1.125rem;
+  --primitive-font-size-xl: 1.25rem;
+  --primitive-font-weight-normal: 400;
+  --primitive-font-weight-medium: 500;
+  --primitive-font-weight-bold: 700;
+  --primitive-line-height-tight: 1.25;
+  --primitive-line-height-normal: 1.5;
+
+  --primitive-duration-fast: 120ms;
+  --primitive-duration-normal: 200ms;
+  --primitive-duration-slow: 320ms;
+  --primitive-ease-default: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --primitive-z-dropdown: 100;
+  --primitive-z-sticky: 200;
+  --primitive-z-overlay: 800;
+  --primitive-z-modal: 900;
+}

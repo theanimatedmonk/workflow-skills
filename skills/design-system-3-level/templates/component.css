@@ -1,0 +1,23 @@
+/**
+ * Example component CSS (3-level).
+ * For 2-level: skip the --card-* aliases and use semantic vars directly.
+ */
+.card {
+  --card-bg: var(--color-bg-elevated);
+  --card-border: var(--color-border-default);
+  --card-radius: var(--radius-card);
+  --card-padding: var(--space-stack-md);
+
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
+}
+
+.card__title {
+  margin: 0 0 var(--space-stack-sm);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-heading-sm);
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-body);
+}
