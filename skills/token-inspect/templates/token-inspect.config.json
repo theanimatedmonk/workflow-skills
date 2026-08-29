@@ -1,0 +1,10 @@
+{
+  "layers": 3,
+  "cssRoots": ["src"],
+  "tokens": {
+    "primitives": "src/styles/tokens/primitives.css",
+    "semantic": "src/styles/tokens/semantic.css"
+  },
+  "writerPort": 7319,
+  "devOrigins": ["http://localhost:5173", "http://127.0.0.1:5173"]
+}
