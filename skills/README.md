@@ -15,6 +15,7 @@ That symlinks into `~/.cursor/skills/`. Start a new Cursor chat afterward.
 | [design-system-2-level](design-system-2-level/SKILL.md) | 2-level token system |
 | [css-modules](css-modules/SKILL.md) | Per-component CSS |
 | [token-inspect](token-inspect/SKILL.md) | Config + Push writer |
+| [svg](svg/SKILL.md) | Paste path data; size xs/sm/md/lg (16/20/24/32px) |
 
 Writer (from the **app** root, not this folder):
 

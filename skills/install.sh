@@ -5,7 +5,7 @@ ROOT="$(cd "$(dirname "$0")" && pwd)"
 DEST="${HOME}/.cursor/skills"
 
 mkdir -p "$DEST"
-for name in design-system-3-level design-system-2-level css-modules token-inspect; do
+for name in design-system-3-level design-system-2-level css-modules token-inspect svg; do
   src="$ROOT/$name"
   dest="$DEST/$name"
   if [ ! -d "$src" ]; then
@@ -21,4 +21,4 @@ for name in design-system-3-level design-system-2-level css-modules token-inspec
   echo "Linked $dest -> $src"
 done
 
-echo "Done. New Cursor chats will see: design-system-3-level, design-system-2-level, css-modules, token-inspect."
+echo "Done. New Cursor chats will see: design-system-3-level, design-system-2-level, css-modules, token-inspect, svg."

@@ -89,6 +89,8 @@ Hard rules:
 
 Copy [templates/Icon.tsx](templates/Icon.tsx) and [templates/Icon.css](templates/Icon.css). Named icons: [templates/ExampleIcon.tsx](templates/ExampleIcon.tsx).
 
+Sizes: `xs` 16×16, `sm` 20×20, `md` 24×24, `lg` 32×32 — set `size` to scale. New icons from pasted paths → **svg** skill.
+
 If the user pastes a full SVG: keep `viewBox` and shape children; drop hardcoded fill/stroke so Icon tokens control color.
 
 ### 5. Token Inspect

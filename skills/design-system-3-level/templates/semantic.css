@@ -48,9 +48,10 @@
   --duration-interaction: var(--primitive-duration-normal);
   --ease-interaction: var(--primitive-ease-default);
 
-  --icon-size-sm: 1rem;
-  --icon-size-md: 1.25rem;
-  --icon-size-lg: 1.5rem;
+  --icon-size-xs: 16px;
+  --icon-size-sm: 20px;
+  --icon-size-md: 24px;
+  --icon-size-lg: 32px;
 }
 
 [data-theme='dark'] {

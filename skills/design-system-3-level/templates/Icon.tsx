@@ -1,11 +1,12 @@
 import type { CSSProperties, SVGAttributes } from 'react';
 import './Icon.css';
 
-export type IconSize = 'sm' | 'md' | 'lg';
+export type IconSize = 'xs' | 'sm' | 'md' | 'lg';
 
 export interface IconProps extends SVGAttributes<SVGSVGElement> {
   children: React.ReactNode;
   viewBox: string;
+  /** xs 16×16, sm 20×20, md 24×24, lg 32×32 */
   size?: IconSize;
   /** e.g. `currentColor` or `var(--color-text-primary)` */
   fill?: string;

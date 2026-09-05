@@ -124,5 +124,5 @@ When Push fails:
 
 ## Related
 
-- Scaffold tokens / Icon / CSS modules → **design-system-3-level**, **design-system-2-level**, **css-modules**
+- Scaffold tokens / Icon / CSS modules → **design-system-3-level**, **design-system-2-level**, **css-modules**, **svg**
 - Writer implementation → [scripts/writer.mjs](scripts/writer.mjs)

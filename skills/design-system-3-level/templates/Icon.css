@@ -1,25 +1,29 @@
-/* Icon — uses semantic --icon-size-* tokens */
+/* Icon — size is xs | sm | md | lg only */
 .icon {
   --icon-fill: none;
   --icon-stroke: currentColor;
 
   display: block;
   flex-shrink: 0;
-  width: var(--icon-size, var(--icon-size-md));
-  height: var(--icon-size, var(--icon-size-md));
+  width: var(--icon-size, var(--icon-size-md, 24px));
+  height: var(--icon-size, var(--icon-size-md, 24px));
   fill: none;
 }
 
+.icon--xs {
+  --icon-size: var(--icon-size-xs, 16px);
+}
+
 .icon--sm {
-  --icon-size: var(--icon-size-sm);
+  --icon-size: var(--icon-size-sm, 20px);
 }
 
 .icon--md {
-  --icon-size: var(--icon-size-md);
+  --icon-size: var(--icon-size-md, 24px);
 }
 
 .icon--lg {
-  --icon-size: var(--icon-size-lg);
+  --icon-size: var(--icon-size-lg, 32px);
 }
 
 .icon :where(path, circle, rect, line, polyline, polygon, ellipse) {

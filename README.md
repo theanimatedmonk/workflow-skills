@@ -23,7 +23,8 @@ If a skill folder already exists and is **not** a symlink, the installer skips i
 rm -rf ~/.cursor/skills/design-system-3-level \
        ~/.cursor/skills/design-system-2-level \
        ~/.cursor/skills/css-modules \
-       ~/.cursor/skills/token-inspect
+       ~/.cursor/skills/token-inspect \
+       ~/.cursor/skills/svg
 ./skills/install.sh
 ```
 
@@ -45,6 +46,7 @@ Start a **new Cursor chat** after installing so the agent sees the skills.
 | *Set up a 2-level design system* | `design-system-2-level` |
 | *Add CSS modules for this component* | `css-modules` |
 | *Wire Token Inspect for this repo* | `token-inspect` |
+| *Add this SVG path as an icon* (`size` xs/sm/md/lg) | `svg` |
 
 ---
 
@@ -213,5 +215,6 @@ workflow-skills/
     design-system-2-level/
     css-modules/
     token-inspect/           SKILL.md + writer + config template
+    svg/                     Paste path data; size xs/sm/md/lg
   README.md
 ```

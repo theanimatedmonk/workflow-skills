@@ -5,6 +5,7 @@ type Props = Omit<IconProps, 'viewBox' | 'children'>;
 /**
  * Paste SVG path `d` (and optional extra shapes) from Figma / SVG export.
  * Keep viewBox in sync with the source SVG.
+ * Scale with size: xs 16px, sm 20px, md 24px, lg 32px.
  */
 export default function ExampleIcon(props: Props) {
   return (
