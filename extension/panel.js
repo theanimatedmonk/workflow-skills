@@ -22,6 +22,7 @@ import {
   editableTargetForProperty,
   listTokensByLayerAndKind,
 } from './token-options.js';
+import { closeCatalog, mountCatalogUi } from './token-catalog.js';
 import { extractVarRefs, resolveValueTrees, terminalValue, normalizeColor } from './tokens.js';
 
 const ROOT_ID = 'slimvg-token-inspect-root';
@@ -79,7 +80,7 @@ function positionBox(box, el) {
 
 export function ensureInspectorUi() {
   const stale = document.getElementById(ROOT_ID);
-  if (stale && !stale.querySelector('.ti-icon-slot')) {
+  if (stale && (!stale.querySelector('.ti-icon-slot') || !stale.querySelector('.ti-catalog-toggle'))) {
     stale.remove();
     ui = null;
   }
@@ -110,6 +111,7 @@ export function ensureInspectorUi() {
     </aside>
   `;
   document.documentElement.appendChild(root);
+  mountCatalogUi(root);
 
   const panel = root.querySelector('.ti-panel');
   panel.querySelector('.ti-close').addEventListener('click', () => {
@@ -1112,6 +1114,7 @@ export function hidePanel() {
   ui.panel.classList.remove('open');
   ui.selectBox.style.display = 'none';
   ui.hoverBox.style.display = 'none';
+  closeCatalog();
 }
 
 export function setOnClose(fn) {

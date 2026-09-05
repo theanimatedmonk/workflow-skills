@@ -2,6 +2,7 @@ import { collectMatchedStyles, elementLabel } from './collect-styles.js';
 import { clearOverrides } from './overrides.js';
 import { relatedIconSvg } from './svg-icon.js';
 import { loadTokenRegistry } from './tokens.js';
+import { closeCatalog, isCatalogOpen, setCatalogRegistry } from './token-catalog.js';
 import {
   clearInspectorUi,
   ensureInspectorUi,
@@ -33,6 +34,7 @@ async function ensureRegistry() {
   if (!tokenRegistry) {
     tokenRegistry = await loadTokenRegistry();
   }
+  setCatalogRegistry(tokenRegistry);
   return tokenRegistry;
 }
 
@@ -99,6 +101,11 @@ function onKeyDown(event) {
     if (openEditor) {
       event.preventDefault();
       openEditor.classList.remove('open');
+      return;
+    }
+    if (isCatalogOpen()) {
+      event.preventDefault();
+      closeCatalog();
       return;
     }
     event.preventDefault();

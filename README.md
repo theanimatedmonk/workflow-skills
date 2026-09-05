@@ -166,8 +166,9 @@ Then:
 
 1. Open the app on a `devOrigins` URL (usually `http://localhost:5173`).
 2. Extension → **Start inspect**.
-3. Click an element → **CSS** / **Design** tabs → edit (preview only).
-4. **Push N changes** writes to disk. Vite HMR should refresh.
+3. The small **tree icon** on the side of the panel lists every primitive, semantic, and component token (tree or table). Filter by layer or search.
+4. Click an element → **CSS** / **Design** tabs → edit (preview only).
+5. **Push N changes** writes to disk. Vite HMR should refresh.
 
 **Esc** or panel **×** exits inspect. **Reset** drops previews without writing.
 
